@@ -37,3 +37,12 @@ def get_password(path, key):
 ](https://github.com/CovenantEyes/sqlcipher-windows)
 
 最后 CheatEngine 得到 wxid 地址，读注册表找到聊天记录路径，全部结合起来可以是个间谍软件 /_\
+
+
+=============
+# xp 下 运行
+
+python 3.4.4
+pip install pypiwin32===219
+pip install pysqlcipher3
+pip install pycrypto
