@@ -164,13 +164,13 @@ while True:
                 title = dom.find('title').text
                 des = dom.find('des').text
                 url = dom.find('url').text
-                content = f'[音乐] {title} - {des}\n{url}'
+                content = '[音乐] {title} - {des}\n{url}'.format(title=title,des=des,url=url)
             if appname == '微信支付':
                 display_name = dom.find('display_name').text
                 words = dom.select('value word')
                 money = '支付金额' + words[0].text
                 explains = '\n'.join(['  * ' + w.text for w in words[1:]])
-                content = f'[微信支付凭证] {display_name}\n\n {money}\n\n{explains}'
+                content = '[微信支付凭证] {display_name}\n\n {money}\n\n{explains}'.format(display_name=display_name,money=money,explains=explains)
             else:
                 content = '[动画表情]'
         elif type_id == 47:
@@ -182,7 +182,7 @@ while True:
             nickname = dom.documentElement.getAttribute('nickname')
             username = dom.documentElement.getAttribute('username')
             alias = dom.documentElement.getAttribute('alias')
-            content = f'[名片] {nickname} - {alias if alias else username}'
+            content = '[名片] {nickname} - {username}'.format(nickname=nickname,username = alias if alias else username)
         elif type_id == 43:
             content = '[视频]'
         elif type_id == 34:
