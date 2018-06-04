@@ -22,7 +22,7 @@ ReadProcessMemory = windll.kernel32.ReadProcessMemory
 WMI = win32com.client.GetObject('winmgmts:')
 
 def get_pid(exe):
-    plist = WMI.ExecQuery(f"SELECT * FROM Win32_Process where name = '{exe}'")
+    plist = WMI.ExecQuery("SELECT * FROM Win32_Process where name = '{exe}'".format(exe=exe))
     return int(plist[0].handle) if len(plist) > 0 else None
 
 def get_module(process, dll):
