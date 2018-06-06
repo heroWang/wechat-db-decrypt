@@ -41,7 +41,7 @@ def get_password(path, key):
 
 =============
 # win10环境
-python 3.6.5
+python 2.7 (win32)
 ## pycrypto 安装
 [Visual C++ 2015 Build Tools](http://go.microsoft.com/fwlink/?LinkId=691126&fixForIE=.exe.)
 cd C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC
@@ -50,8 +50,9 @@ set CL=-FI"%VCINSTALLDIR%\INCLUDE\stdint.h"
 pip install pycrypto
 
 
-## pysqlcipher3 编译和安装
+## pysqlcipher 编译
+pip install pysqlcipher
+[openssl win32](http://slproweb.com/download/Win32OpenSSL-1_0_2o.exe)
 
 
-
-pip install pypiwin32===
+pip install pypiwin32 winreg

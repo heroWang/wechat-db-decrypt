@@ -13,7 +13,7 @@ from win32process import(
 )
 from ctypes import *
 import os
-from winreg import *
+from _winreg import *
 import hashlib
 import binascii
 from time import sleep, localtime, strftime
