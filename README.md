@@ -40,9 +40,18 @@ def get_password(path, key):
 
 
 =============
-# xp 下 运行
-
-python 3.4.4
-pip install pypiwin32===219
-pip install pysqlcipher3
+# win10环境
+python 3.6.5
+## pycrypto 安装
+[Visual C++ 2015 Build Tools](http://go.microsoft.com/fwlink/?LinkId=691126&fixForIE=.exe.)
+cd C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC
+vcvarsall
+set CL=-FI"%VCINSTALLDIR%\INCLUDE\stdint.h"
 pip install pycrypto
+
+
+## pysqlcipher3 编译和安装
+
+
+
+pip install pypiwin32===
