@@ -55,4 +55,4 @@ pip install pysqlcipher
 [openssl win32](http://slproweb.com/download/Win32OpenSSL-1_0_2o.exe)
 
 
-pip install pypiwin32 winreg
+pip install pypiwin32
